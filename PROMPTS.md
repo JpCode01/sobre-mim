@@ -27,18 +27,33 @@ Registro cronológico dos prompts e comandos fornecidos durante o desenvolviment
 
 ---
 
-## Verificações Realizadas
+## 3. Prompt — Expandir a página pessoal sem alterar sua identidade visual
+
+**Finalidade:** Evoluir a página existente preservando a identidade visual aprovada, adicionando seções de Tech Stack, Projetos, Contato e atualizando a documentação.
+
+**Conteúdo:**
+> Atue como um **desenvolvedor front-end experiente**, com domínio de HTML5, CSS3, Clean Code, acessibilidade e organização de projetos web.
+>
+> Analise a implementação atual e evolua a página existente, preservando sua identidade visual. O projeto já possui tipografia, cores e design aprovados: **não redesenhe a página nem substitua o estilo atual**. O objetivo é corrigir a falta de conteúdo, acrescentar seções relevantes e atualizar a documentação.
+>
+> [Prompt completo com 8 seções detalhando: contexto pessoal/profissional, stack e nível de conhecimento, projetos a incluir, o que falta na página atual, design aprovado, organização e Clean Code, atualização da documentação, validação e entrega]
+
+---
+
+## Verificações Realizadas (após expansão)
 
 ✅ **Nome e apresentação presentes** — "João Pedro Vaz Garbin" + tagline profissional no hero
 ✅ **Seção "Sobre" com duas linhas** — Dois parágrafos sobre interesses e objetivos profissionais
-✅ **Lista com três tecnologias** — Kubernetes, AWS, Microsserviços (alinhadas ao perfil backend)
-✅ **Link funcional para GitHub** — No header (nav fixa) e no footer
-✅ **CSS separado em `css/style.css`** — Organizado em seções lógicas com variáveis CSS
+✅ **Tech Stack** — 5 categorias (Backend, Bancos de Dados, Frontend, DevOps/Cloud, Testes) com 13 tecnologias e níveis prudentes
+✅ **Projetos** — 4 projetos (L'Privillege, ScreenTrack, ScreenMatch, Screensound) com descrição, tecnologias e links funcionais
+✅ **Tecnologias para aprofundar** — Kubernetes, AWS, Microsserviços (diferenciadas do stack conhecido)
+✅ **Contato** — GitHub e LinkedIn no header (nav fixa) e footer
+✅ **CSS separado em `css/style.css`** — Organizado em seções lógicas com variáveis CSS, novos estilos para stack e projects
 ✅ **Código organizado e sem complexidade desnecessária** — HTML semântico, CSS modular, sem JS
-✅ **Responsividade básica verificada** — Breakpoints em 640px e 1024px, clamp() para tipografia fluida
-✅ **Commits semânticos** — Comandos fornecidos para execução manual
-✅ **PROMPTS.md criado** — Este arquivo com registro dos prompts
-✅ **README.md adequado** — Documentação completa do projeto
+✅ **Responsividade verificada** — Breakpoints em 640px e 1024px, grid auto-fit, clamp() para tipografia fluida
+✅ **Identidade visual preservada** — Fonte Space Grotesk, paleta dark mode, espaçamentos, bordas, animações
+✅ **README.md atualizado** — Documentação completa refletindo o conteúdo expandido
+✅ **PROMPTS.md atualizado** — Registro cronológico incluindo este prompt
 
 ---
 
@@ -57,6 +72,9 @@ git commit -m "style: define layout dark mode, tipografia Space Grotesk e design
 git commit -m "refactor: organiza CSS em seções lógicas com variáveis CSS"
 git commit -m "docs: adiciona README.md com documentação do projeto"
 git commit -m "docs: registra prompts utilizados no PROMPTS.md"
+git commit -m "feat: adiciona seções Tech Stack, Projetos e Contato"
+git commit -m "style: implementa cards de projetos e grid de tecnologias"
+git commit -m "docs: atualiza README.md e PROMPTS.md com expansão do projeto"
 
 # Conectar ao repositório remoto (se aplicável)
 git remote add origin https://github.com/JpCode01/sobre-mim.git
